@@ -9,5 +9,8 @@ public struct InputData : IComponentData
     public KeyCode rightKey;
     public KeyCode leftKey;
 
+    //public string horizontalAxis;
+    //public string verticalAxis;
+
 
 }
