@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceFighter
       objectReference: {fileID: 0}
+    - target: {fileID: 4472813876689740876, guid: 67e1c294c66e14ea9b9c32154223b36a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67e1c294c66e14ea9b9c32154223b36a, type: 3}
 --- !u!1 &1648850362 stripped
@@ -230,3 +235,15 @@ MonoBehaviour:
     z: 0
   speed: 6
   turnSpeed: 0.1
+--- !u!114 &1648850365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648850362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4dd00838501275449a95a86cf800aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -8,7 +8,9 @@ public class PlayerMovementSystem : SystemBase
     {
         float deltaTime = Time.DeltaTime;
 
-        Entities.ForEach((ref Translation pos, in MoveData moveData) =>
+        Entities.
+            WithAll<PlayerTag>().
+            ForEach((ref Translation pos, in MoveData moveData) =>
         {
             float3 normalizedDir = math.normalizesafe(moveData.direction);
             pos.Value += normalizedDir * moveData.speed * deltaTime;
