@@ -15,7 +15,7 @@ public class MoveForwardSystem : SystemBase
         float deltaTime = Time.DeltaTime;
 
         Entities.
-            WithAll<AsteroidTag>().
+            WithAny<AsteroidTag, ChaserTag>().
             ForEach((ref Translation pos, in MoveData moveData, in Rotation rot) =>
         {
             float3 forwardDirection = math.forward(rot.Value);
